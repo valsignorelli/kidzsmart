@@ -1,7 +1,7 @@
 {
   "development": {
     "username": "root",
-    "password": "",
+    "password": "Escola18",
     "database": "kidZmart_db",
     "host": "localhost",
     "dialect": "mysql"
