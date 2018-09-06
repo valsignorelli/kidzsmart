@@ -1,5 +1,4 @@
-<script>
-    var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L'];
+var memory_array = ['A','A','B','B','C','C','D','D','E','E','F','F','G','G','H','H','I','I','J','J','K','K','L','L'];
 var memory_values = [];
 var memory_tile_ids = [];
 var tiles_flipped = 0;
@@ -60,24 +59,3 @@ function memoryFlipTile(tile,val){
 		}
 	}
 }
-</script>
-
-<div class="container welcome-section">
-    <div class="section-padding"></div>
-    <div class="section-header">
-        <h3>Memory game <span>FUN</span>!</h3>
-
-
-
-<div id="memory_board"></div>
-<div><a href="/">← Back To Home</a></div>
-</div>
-</div>
-
-<script>
-
-    $(function() {
-        newBoard();
-    });
-    
-</script>
