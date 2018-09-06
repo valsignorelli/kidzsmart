@@ -58,7 +58,7 @@
 	width: 100%;
 }
 .photoslider-section .item::before{
-	background-color: rgba(0, 0, 0, 0.4);
+	background-color: rgba(0, 0, 0, 0);
     bottom: 0;
     content: "";
     display: inline-block;
@@ -68,7 +68,7 @@
     top: 0;
 }
 .photoslider-section .item:nth-child(2)::before{
-	background-color: rgba(0, 0, 0, 0.15);
+	background-color: rgba(0, 0, 0, 0);
 }
 .photoslider-section .carousel-caption{
     bottom: 0;
@@ -77,12 +77,14 @@
     right: 0;
     text-align: left;
     text-shadow: none;
-    top: 54.5%;
+    top: 60%;
     transform: translate(0px, -50%);
 	-moz-transform: translate(0, -50%);
 	-ms-transform: translate(0, -50%);
 	-webkit-transform: translate(0, -50%);
 }
+s
+
 .photoslider-section .item h3,
 .photoslider-section .item h4 {
 	animation-delay: 1s;
@@ -90,12 +92,13 @@
     font-size: 70px;
     font-weight: 700;
     line-height: 70px;
-    margin: 0;
+	color: orange; 
+    margin: 10px;
     word-wrap: break-word;
 	-webkit-animation-delay: 1s;
 }
 .photoslider-section .item h3 span {
-	color: #ffc722;
+	color: orange;
 	margin-left: 9px;
 }
 .photoslider-section .item h3{
@@ -103,7 +106,8 @@
 }
 .photoslider-section .item p {
 	animation-delay: 2s;
-	font-size: 30px;
+	font-size: 20px;
+	color: #000;
 	font-family: 'Niconne', cursive;
 	padding-right: 20px;
 	line-height: 35px;
@@ -114,7 +118,7 @@
 	background-color: #ffc722;
     color: #333;
     display: inline-block;
-    font-family: "robotoblack";
+    font-family: "Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
     font-size: 12px;
     line-height: 28px;
     margin-top: 13px;
@@ -257,14 +261,14 @@
 	right: 49px;
 	bottom: 0;
 	top: 0;
-	background-color: rgba(54,53,51,0.95);
+	background-color: #3A9453;
 	display: inline-block;
-	border-right: 2px solid #ffc722;
+	border-right: 2px solid #BC7024;
 }
 .welcome-title h3{
 	position: relative;
 	font-size: 16px;
-	color: #fefefe;
+	color: orange;
 	text-transform: capitalize;
 	line-height: 24px;
 	letter-spacing: 0.48px;
@@ -304,7 +308,7 @@
 	top: 100px;
 }
 .welcome-content > span{
-	color: #ffc722;
+	color: #FD7F00;
 	font-size: 12px;
 	line-height: 24px;
 	letter-spacing: 0.6px;

@@ -47,6 +47,10 @@
 	position: relative;	
 }
 
+.navbar-brand img {
+	margin-bottom: 50px;
+}
+
 .ow-navigation .dropdown-menu > .active > a,
 .ow-navigation .dropdown-menu > .active > a:focus,
 .ow-navigation .dropdown-menu > .active > a:hover {
