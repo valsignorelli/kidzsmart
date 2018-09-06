@@ -1,54 +1,4 @@
-/*
-	Theme Name: Knowledge
-	Created : 
-	Updated : 
-	Version: 1.0
 
-*/
-
-/* ========================================================================== */
-/* ========================================================================== */
-							/* [Table of contents] */
-/* ========================================================================== */
-/* ========================================================================== */
-
-/*
-	## Shortcodes
-		-- PhotoSlider Section
-		-- PhotoSlider2
-		- Welcome Section
-		- Welcome2
-		-- Parallax Section
-		-- Event Section
-		-- EventBlock
-		-- Event2 section
-		-- Search Courses
-		-- Video Testimonial Section
-		-- CoursesDetail Section
-		-- Team Section
-		-- Testimonial2
-		-- WhyChooseUs Section
-			-- Accordiaon Section
-		-- CallOut
-		-- LatestBlog Section
-		-- LatestBlog2
-		-- Blog
-		-- BlogPost
-		-- ContactUs Section
-			-- Map
-			-- GetInTouch
-			-- ContactUs Form
-			-- ContactDetail Block
-		
-		
-	## Responsive
-		-- min-width: 992
-		-- min-width: 992 to max-width: 1199
-		-- max-width: 991
-		-- max-width: 767
-		-- max-width: 639
-		-- max-width: 479
-*/
 
 /* ## Shortcodes */
 /* -- PhotoSlider Section */
@@ -267,8 +217,9 @@ s
 }
 .welcome-title h3{
 	position: relative;
-	font-size: 16px;
-	color: orange;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 24px;
+	color: #fff;
 	text-transform: capitalize;
 	line-height: 24px;
 	letter-spacing: 0.48px;
@@ -308,8 +259,8 @@ s
 	top: 100px;
 }
 .welcome-content > span{
-	color: #FD7F00;
-	font-size: 12px;
+	color: #fff;
+	font-size: 16px;
 	line-height: 24px;
 	letter-spacing: 0.6px;
 	text-transform: capitalize;
@@ -317,7 +268,7 @@ s
 	margin-bottom: 9px;
 }
 .welcome-content p {
-	font-size: 14px;
+	font-size: 20px;
 	color: #bbb;
 	line-height: 24px;
 	letter-spacing: 0.14px;
@@ -329,7 +280,8 @@ s
 .welcome-content .course-detail li{
 	display: inline-block;
 	color: #fff;
-	font-size: 14px;
+	font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+	font-size: 16px;
 	line-height: 24px;
 	width: 100%;
 	margin-bottom: 8px;
@@ -337,10 +289,11 @@ s
 	text-transform: capitalize;
 }
 .welcome-content .course-detail li:last-of-type{
-	margin-bottom: 0;
+	margin-bottom: 10px;
 }
 .welcome-content .course-detail li i{
 	margin-right: 10px;
+	margin-top: 10px;
 }
 .welcome-content .course-detail li i.fa-graduation-cap{
 	transform: scaleX(-1);
@@ -355,11 +308,12 @@ s
 	display: inline-block;
 }
 .course-rating li a{
-	font-size: 12px;
+	font-size: 16px;
 	color: #ffc722;
 	line-height: 24px;
 	text-decoration: none;
 	margin-right: 5px;
+	margin-top: 10px;
 	font-weight: 700;
 }
 .course-rating li:last-of-type a{
@@ -370,7 +324,8 @@ s
 	text-decoration: none;
 	text-transform: uppercase;
 	text-decoration: none;
-	font-size: 12px;
+	font-size: 16px;
+	margin-top: 10px;
 	letter-spacing: 0.48px;
 	line-height: 26px;
 	padding: 9px 22px;
@@ -388,60 +343,6 @@ s
 	border-color: #ffc722;
 }
 
-/* -- Welcome2 */
-.welcome2 .search-result {
-	display: inline-block;
-	width: 100%;
-	border-bottom: 1px dotted #ddd;
-	padding-bottom: 20px;
-	margin-bottom: 66px;
-	position: relative;	
-}
-.welcome2 .search-result > span{
-	font-size: 14px;
-	color: #aaa;
-	line-height: 24px;
-}
-
-.welcome2 .search-result .input-group{
-	position: relative;
-	display: inline-block;
-	float: right;	
-	max-width: 187px;
-}
-
-.welcome2 .search-result .input-group .form-control {
-	color:#aaa;
-	border: 1px solid #ececec;
-    border-radius: 15px;
-    box-shadow: none;
-	-webkit-box-shadow: none;
-	min-height: 36px;
-	font-size: 13px;
-	line-height: 24px;
-	letter-spacing: 0.65px;
-	padding-left: 18px;
-	padding-right: 45px;
-	-webkit-box-shadow: none;
-	-webkit-appearance: none;
-}
-.welcome2 .search-result .input-group-btn{
-	position: absolute;
-	right: 0;
-}
-.welcome2 .search-result  .input-group-btn > .btn {
-	background-color: transparent;
-	border: none;
-	color: #777;
-	font-size: 15px;
-	box-shadow: none;
-	min-height: 36px;
-	outline: none;
-	position: absolute;
-	right: 7px;
-	z-index: 15;
-	top: 0;
-}
 
 /* -- OW Pagination */
 .ow-pagination {
