@@ -40,9 +40,6 @@
 
 
 
-
-
-
     <script src="/libraries/lib.js"></script>
 
 
@@ -51,7 +48,64 @@
 </head>
 
 
-<body>
+<body data-offset="200" data-spy="scroll" data-target=".ow-navigation">
+
+<div id="site-loader" class="load-complete">
+    <div class="loader">
+        <div class="loader-inner ball-clip-rotate">
+            <div></div>
+        </div>
+    </div>
+</div>
+
+<header class="header-main container-fluid no-padding">
+
+    <div class="top-header container-fluid no-padding">
+        <div class="container-fluid">
+            <div class="topheader-left">
+                <a href="mailto:Support@info.com" title="Support@info.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>Emailus: Support@info.com</a>
+            </div>
+            <div class="topheader-right">
+                <a href="/login" title="Login"><i class="fa fa-sign-out" aria-hidden="true"></i>Login</a>
+                <a href="/register" title="Register">Register</a>
+            </div>
+        </div>
+    </div><!-- Top Header /- -->
+
+    <!-- Menu Block -->
+    <div class="menu-block container-fluid no-padding">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Navigation -->
+                <nav class="navbar ow-navigation">
+                    <div class="col-md-5">
+                        <div class="navbar-header">
+                            <a title="Logo" href="index.html" class="navbar-brand" style="width:150px; height: 50px"><img src="images/logo_kidzmart1.png" alt="logo"/></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="navbar-collapse collapse" id="navbar">
+                            <ul class="nav navbar-nav menubar">
+                                <li class="dropdown active"><a aria-expanded="false" aria-haspopup="true" href="index.html" role="button" class="dropdown-toggle" title="Home">Home</a> <em class="ddl-switch fa fa-angle-down"></em>
+                                </li>
+                                <li class="dropdown">
+                                    <a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Courses" href="math.html">Math Fun</a>
+                                </li>
+                                <li><a title="Games" href="./games.html">Games</a></li>
+                                <li><a title="Recipes" href="./recipes.html">Recipes</a></li>
+
+                                <li><a title="Contact" href="./videos.html">Videos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav><!-- Navigation /- -->
+
+            </div>
+        </div><!-- Container /- -->
+    </div><!-- Menu Block /- -->
+</header>
 {{{body}}}
 
 <!-- Footer Main -->
