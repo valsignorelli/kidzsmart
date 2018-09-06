@@ -1,8 +1,8 @@
 {
   "development": {
     "username": "root",
-    "password": "Escola18",
-    "database": "kidZmart_db",
+    "password": "C@r@p@ce24",
+    "database": "youtube",
     "host": "localhost",
     "dialect": "mysql"
   },
