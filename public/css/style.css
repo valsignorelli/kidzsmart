@@ -1042,3 +1042,26 @@ a.footer-logo {
     }
 }
 
+div#memory_board{
+    background: lightblue;
+    border:#999 1px solid;
+    width:800px;
+    height:540px;
+    padding:24px;
+    margin:0px auto;
+}
+div#memory_board > div{
+    background: url("../images/logo_kidzmart1.png") no-repeat;
+    background-size: 100%;
+    background-position: center;
+    border:#fff 1px solid;
+    width:71px;
+    height:71px;
+    float:left;
+    margin:10px;
+    padding:0px;
+    font-size:50px;
+    cursor:pointer;
+    text-align:center;
+}
+
