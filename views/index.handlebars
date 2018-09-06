@@ -1,52 +1,231 @@
-<div id="home">
-  <div class="container">
-    <div class="topheader-right">
-					<a href="/login" title="Login"><i class="fa fa-sign-out" aria-hidden="true"></i>Login</a>
-					<a href="/signup" title="Register">Register</a>
-				</div>
-    <div class="row">      
-      <div class="col-8 offset-2">
-        <h1>{{msg}}</h1>
 
-        <form class="clearfix mb-4" action="POST">
-          <div class="form-group">
-            <label for="food-name">Full Name</label>
-            <input type="text" id="food-name" class="form-control" aria-describedby="food-name" placeholder="Enter full name">
-          </div>
-
-          <div class="form-group">
-            <label for="food-dish">Dish</label>
-            <textarea class="form-control" id="food-dish" aria-describedby="food-dish"  placeholder="Enter dish name"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="food-ingredients">Ingredients</label>
-            <textarea class="form-control" id="food-ingredients" aria-describedby="food-ingredients"  placeholder="Enter ingredients"></textarea>
-          </div>
-
-          <div class="form-group">
-            <label for="food-instruction">Instruction</label>
-            <textarea class="form-control" id="food-instruction" aria-describedby="food-instruction" placeholder="Enter instruction on how to cook"></textarea>
-          </div>
-          <button id="submit" class="btn btn-primary float-right">Submit</button>
-          
-        </form>
-
-        <h3>Food Recipes By:</h3>
-        <ul id="food-list" class="list-group">
-          {{#each foods}}
-          <li  data-id="{{this.id}}" class="list-group-item">
-            <a href="/{{this.id}}">{{this.name}}</a>
-            <button class="btn btn-danger float-right delete">X</button>
-          </li>
-          {{/each}}
-        </ul>
-
-      </div>
+<div id="site-loader" class="load-complete">
+    <div class="loader">
+        <div class="loader-inner ball-clip-rotate">
+            <div></div>
+        </div>
     </div>
-  </div>
+</div>
+
+<header class="header-main container-fluid no-padding">
+
+    <div class="top-header container-fluid no-padding">
+        <div class="container">
+            <div class="topheader-left">
+                <a href="mailto:Support@info.com" title="Support@info.com"><i class="fa fa-envelope-o" aria-hidden="true"></i>Emailus: Support@info.com</a>
+            </div>
+            <div class="topheader-right">
+                <a href="/login" title="Login"><i class="fa fa-sign-out" aria-hidden="true"></i>Login</a>
+                <a href="/register" title="Register">Register</a>
+            </div>
+        </div>
+    </div><!-- Top Header /- -->
+
+    <!-- Menu Block -->
+    <div class="menu-block container-fluid no-padding">
+        <!-- Container -->
+        <div class="container">
+            <div class="row">
+                <!-- Navigation -->
+                <nav class="navbar ow-navigation">
+                    <div class="col-md-5">
+                        <div class="navbar-header">
+                            <a title="Logo" href="index.html" class="navbar-brand" style="width:150px; height: 50px"><img src="images/logo_kidzmart1.png" alt="logo"/></a>
+
+                        </div>
+                    </div>
+                    <div class="col-md-7">
+                        <div class="navbar-collapse collapse" id="navbar">
+                            <ul class="nav navbar-nav menubar">
+                                <li class="dropdown active"><a aria-expanded="false" aria-haspopup="true" href="index.html" role="button" class="dropdown-toggle" title="Home">Home</a> <em class="ddl-switch fa fa-angle-down"></em>
+                                </li>
+                                <li class="dropdown">
+                                    <a aria-expanded="false" aria-haspopup="true" role="button" class="dropdown-toggle" title="Courses" href="math.html">Math Fun</a>
+                                </li>
+                                <li><a title="Games" href="./games.html">Games</a></li>
+                                <li><a title="Recipes" href="./recipes.html">Recipes</a></li>
+
+                                <li><a title="Contact" href="./videos.html">Videos</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </nav><!-- Navigation /- -->
+
+            </div>
+        </div><!-- Container /- -->
+    </div><!-- Menu Block /- -->
+</header>
+
+<div class="photoslider-section container-fluid no-padding">
+    <div id="home-slider" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+                <img src="./images/banner1.png" alt="photoslider1" width="1920" height="801"/>
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="col-md-6 col-sm-8 col-xs-8 ow-pull-right no-padding">
+                            <h4 data-animation="animated bounceInLeft">Welcome to</h4>
+                            <h3 data-animation="animated fadeInDown"><img src="./images/logo_kidzmart1.png" alt="photoslider1" width="338" height="103"/></h3>
+                            <p style="font-size: 30px" data-animation="animated bounceInRight">Where kids have fun learning!</p>
+                            <a href="#" title="Learn More" data-animation="animated zoomInUp">Sign Up Today!</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <img src="./images/banner2.png" alt="photoslider2" width="1920" height="801"/>
+                <div class="carousel-caption">
+                    <div class="container">
+                        <div class="col-md-6 col-sm-8 col-xs-8 ow-pull-left no-padding">
+                            <h4 data-animation="animated bounceInLeft">Welcome to</h4>
+                            <h3 data-animation="animated fadeInDown"><img src="./images/logo_kidzmart1.png" alt="photoslider1" width="338" height="103"/></h3>
+                            <p style="font-size: 30px" data-animation="animated bounceInRight">Where kids have fun learning!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="left carousel-control" href="#home-slider" role="button" data-slide="prev">
+            <i class="fa fa-angle-left"></i>
+        </a>
+        <a class="right carousel-control" href="#home-slider" role="button" data-slide="next">
+            <i class="fa fa-angle-right"></i>
+        </a>
+    </div>
 </div>
 
 
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script src="/js/index.js"></script>
+<div class="container welcome-section">
+    <div class="section-padding"></div>
+    <div class="section-header">
+        <h3>Start learning and having <span>FUN</span>!</h3>
+
+    </div>
+    <div class="row">
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="welcome-box">
+                <img src="./images/math.png" alt="math" width="370" height="440"/>
+                <div class="welcome-title">
+                    <h3>Math Fun</h3>
+                </div>
+                <div class="welcome-content">
+                    <span>Have fun with Math</span>
+                    <p>Learn math playing fun games</p>
+                    <a href="math.html" title="Apply now">Play now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="welcome-box">
+                <img src="./images/games.png" alt="games" width="370" height="440"/>
+                <div class="welcome-title">
+                    <h3>Learning Games</h3>
+                </div>
+                <div class="welcome-content">
+                    <span>Games</span>
+                    <p>Play games to get your brain working</p>
+                    <a href="games.html" title="Apply now">Play Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4 col-sm-6 col-xs-6">
+            <div class="welcome-box">
+                <img src="./images/recipes.png" alt="recipes" width="370" height="440"/>
+                <div class="welcome-title">
+                    <h3>Kid Friendly Recipes</h3>
+                </div>
+                <div class="welcome-content">
+                    <span>Yummy Recipes</span>
+                    <p>Here you can find a recipe that you can make (with the help of an adult) or add your own recipe</p>
+
+                    <a href="recipes.html" title="Apply now">Start Cooking</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="section-padding"></div>
+</div>
+
+
+
+<div class="container-fluid no-padding video-testimonial-section">
+    <div class="container">
+        <div class="section-padding"></div>
+        <div class="section-header">
+            <h3>Our <span>Education Events</span></h3>
+            <p>Achieving the desired success requires patience and persistence your goals need time</p>
+        </div>
+        <div class="row">
+            <div class="col-md-6 col-sm-12">
+                <div class="video-block video-block-lg">
+                    <a title="Paly Video" class="popup-youtube" href="http://www.youtube.com/watch?v=0O2aH4XLbto"><i class="fa fa-play" aria-hidden="true"></i></a>
+                    <img  src="./images/video-poster-1.jpg" width="570" height="400" alt="Video Poster-1"/>
+                    <div class="video-content">
+                        <h3>Your Career Starts Here</h3>
+                        <p>Achieving the desired success requires patience and persistence.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-sm-12">
+                <div class="testimonial-block">
+                    <div id="testimonial-slider" class="carousel slide" data-ride="carousel">
+                        <ol class="carousel-indicators">
+                            <li data-target="#testimonial-slider" data-slide-to="0" class="active"></li>
+                            <li data-target="#testimonial-slider" data-slide-to="1"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-content">
+                                        <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness fully researched growth.</p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="../../../../../page template/HTML/images/testimonial-thumb-1.jpg" alt="testimonial-thumb-1" width="96" height="96"/>
+                                        <p>Darly Dixon, <span>Designing Staff</span></p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-box">
+                                    <div class="testimonial-content">
+                                        <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness fully researched growth.</p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="../../../../../page template/HTML/images/testimonial-thumb-2.jpg" alt="testimonial-thumb-2" width="96" height="96"/>
+                                        <p>Josh Austin,<span>Project Manager</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <div class="testimonial-box">
+                                    <div class="testimonial-content">
+                                        <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness fully researched growth.</p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="../../../../../page template/HTML/images/testimonial-thumb-1.jpg" alt="testimonial-thumb-1" width="96" height="96"/>
+                                        <p>Darly Dixon <span>Designing Staff</span></p>
+                                    </div>
+                                </div>
+                                <div class="testimonial-box">
+                                    <div class="testimonial-content">
+                                        <p>Credibly innovate granular internal or organic sources whereas high standards in web-readiness fully researched growth.</p>
+                                    </div>
+                                    <div class="testimonial-author">
+                                        <img src="../../../../../page template/HTML/images/testimonial-thumb-2.jpg" alt="testimonial-thumb-2" width="96" height="96"/>
+                                        <p>Josh Austin ,<span>Project Manager</span></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-padding"></div>
+    </div>
+</div>
+
+
+
+
