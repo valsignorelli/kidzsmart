@@ -1,4 +1,5 @@
 var db = require("../models");
+
 const bcrypt = require('bcrypt');
 
 
@@ -61,8 +62,13 @@ module.exports = function (app) {
         res.render("recipes");
     });
 
-    app.get("/youtube", function (req, res) {
-        res.render("youtube");
+    app.get("/videos", function (req, res) {
+
+        db.YouTube.findAll().then(videos => {
+            res.render("videos", {videos});
+        });
+
+
     });
 
     app.get("/games", function (req, res) {

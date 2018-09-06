@@ -5139,7 +5139,7 @@ jQuery.extend(jQuery.easing, {
     }
 
     function n(t, e) {
-        this.el = t, this.inputEl = t.querySelector("form > input.sb-search-input"), this._initEvents()
+
     }
 
     !t.addEventListener && t.Element && function () {
