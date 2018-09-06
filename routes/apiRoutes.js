@@ -58,14 +58,22 @@ module.exports = function (app) {
     });
 
 
-    app.get("/recipes", function (req, res) {
-        res.render("recipes");
-    });
+
 
     app.get("/videos", function (req, res) {
 
         db.YouTube.findAll().then(videos => {
             res.render("videos", {videos});
+        });
+
+
+    });
+
+    app.get("/recipes", function (req, res) {
+
+        db.Food.findAll().then(foods => {
+            console.log(foods);
+            res.render("recipes", {foods});
         });
 
 
